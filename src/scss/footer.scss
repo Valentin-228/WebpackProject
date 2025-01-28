@@ -1,0 +1,49 @@
+@media only screen and (min-width: 320px) {
+  .footer {
+    background: $background-grey;
+    padding: 16px 4px 19px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid $mint-color;
+
+    &__text {
+      color: $grey;
+      text-align: right;
+      font-family: $medium;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      text-align: center;
+      width: 312px;
+    }
+  }
+
+  
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 24px 25px 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 35px;
+    width: 312;
+    
+  }
+
+  .footer__text:first-child {
+    text-align: left;
+    width: 318px;
+  }
+
+  .footer__text:last-child {
+    text-align: right;
+    width: 318px;
+  }
+}
+
+

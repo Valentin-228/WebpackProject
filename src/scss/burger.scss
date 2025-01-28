@@ -1,0 +1,267 @@
+@media only screen and (min-width: 320px) {
+  .wrapper-burger {
+    display: block;
+    flex-direction: column;
+    min-height: 100%;
+    width: 320px;
+    position: fixed;
+    overflow-y: auto;
+    background: $white;
+    z-index: 10;
+    position: absolute;
+    left: -320px;
+    transition: transform 1s;
+
+  }
+
+  .wrapper-burger.wrapper-burger-hidden {
+    display: block;
+
+    transform: translateX(100%);
+    box-shadow: -2px 400px 400px 400px rgba(69, 79, 126, 0.02),
+
+      16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      10px 2px 9px 1000px rgba(255, 255, 255, 0.9);
+
+  }
+
+  .navigation__burger-btn {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../img/burger-close.svg');
+    cursor: pointer;
+  }
+
+  .navigation__search-btn {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../img/search.svg');
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    padding: 18px 24px 0px 24px;
+  }
+
+  .navigation__group {
+    padding-left: 16px;
+    padding-right: 78px;
+  }
+
+  .menu__list-hover {
+    display: flex;
+    align-items: start;
+
+    padding-top: 24px;
+
+    &::before {
+      width: 4px;
+      height: 40px;
+      content: '';
+      background-image: url('../img/highlight.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 90px;
+      z-index: 8;
+    }
+  }
+
+  .menu {
+    padding-left: 0px;
+  }
+
+  .menu__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .menu__items {
+    margin-bottom: 32px;
+    color: $black;
+    font-family: $medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+  }
+
+  .menu__items-link {
+    color: $black;
+    font-family: $medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    text-decoration: none;
+    padding-left: 24px;
+  }
+
+  .menu__items-link:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+  .social__tell-btn {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../img/tell-burger.svg');
+    cursor: pointer;
+  }
+
+  .social__chat-btn {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../img/chat-burger.svg');
+    cursor: pointer;
+  }
+
+  .social__profile-btn {
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-image: url('../img/profile-burger.svg');
+    cursor: pointer;
+  }
+
+  .social {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 144px;
+    gap: 16px;
+  }
+
+  .info {
+    padding-left: 24px;
+    margin-bottom: 40px;
+    color: $black;
+    font-family: $medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+
+    &__tell {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .lang {
+    display: flex;
+    padding-left: 24px;
+    margin-bottom: 32px;
+
+  }
+
+  .lang__btn {
+    background-color: $white;
+    border: none;
+    color: $black;
+    font-family: $medium;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    cursor: pointer;
+
+    &:first-child {
+      color: $grey;
+    }
+  }
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-burger {
+    padding-top: 300px;
+
+  }
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  .wrapper-burger {
+    display: block;
+    position: static;
+    left: 0px;
+    transition: none;
+  }
+
+
+
+  .wrapper-burger.wrapper-burger-hidden {
+    position: static;
+    transform: none;
+    box-shadow: none;
+  }
+
+
+
+
+
+  .navigation__burger-btn {
+    display: none;
+
+  }
+
+  .navigation {
+    padding: 30px 30px 13px 22px;
+    justify-content: space-between;
+  }
+
+  .menu {
+    padding-top: 0;
+  }
+
+  .navigation__group {
+    padding-left: 0;
+  }
+
+  .footer-burger {
+    margin-top: 0;
+    padding-top: 241px;
+  }
+
+
+  .menu__list-hover {
+    display: flex;
+    align-items: start;
+
+    padding-top: 24px;
+
+    &::before {
+      width: 4px;
+      height: 40px;
+      content: '';
+      background-image: url('../img/highlight.svg');
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 0;
+      top: 116px;
+
+    }
+  }
+}

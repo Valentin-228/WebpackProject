@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Medium.woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Bold.woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: url('../fonts/TTLakes-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//цвет
+$pink: #ff3e79;
+$black: #1b1c21;
+$grey: #7e7e82;
+$background-grey: #f8f8f8;
+$white: #fff;
+$mint-color: #D9FFF5;
+
+//шрифт
+$medium: 'TT Lakes';
+$bold: 'TT Lakes';
+$regular: 'TT Lakes';
+
+//меню бургер
+
+@import 'wrapper-brands';
+@import 'wrapper-technic';
+@import 'body';
+@import 'main-content';
+@import 'header';
+@import 'btn-menu';
+@import 'main-title';
+@import 'next';
+@import 'photo';
+@import 'content-wrapper';
+@import 'burger';
+@import 'block-elements';
+@import 'wrapper-price';
+@import 'block-text';
+@import 'footer';
+@import 'main';
+@import 'popup-call';
+@import 'popup-feedback';
