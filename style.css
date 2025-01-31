@@ -487,7 +487,7 @@
       width: 24px;
       height: 24px;
       border: none;
-      background-image: url(./static/expand.svg);
+      background-image: url("/img/expand.svg");
       cursor: pointer; }
     .next__text {
       color: #1b1c21;
@@ -517,7 +517,7 @@
     width: 320px;
     margin: 0 auto;
     overflow: hidden;
-    z-index: 9;
+    z-index: 8;
     display: block; } }
 
 @media only screen and (min-width: 768px) {
@@ -535,6 +535,7 @@
     flex-direction: column;
     min-height: 100%;
     width: 320px;
+    position: fixed;
     overflow-y: auto;
     background: #fff;
     z-index: 10;
